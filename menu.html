@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/coffee-cup.svg" type="image/x-icon">
+    <title>Menu</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="./">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <nav>
+                <ul class="header-ul">
+                    <li class="header-li"><a class="test" href="./#favorite">Favorite coffee</a> </li>
+                    <li class="header-li"><a class="test" href="./#about">About</a></li>
+                    <li class="header-li"><a class="test" href="./#m-app">Mobile app</a></li>
+                    <li class="header-li"><a class="test" href="#contacts"> Contact us</a></li>
+                    <li class="header-li lii"><a class="test1" href="#"> Menu
+                            <img src="img/coffee-cup.svg" alt="">
+                        </a></li>
+
+                </ul>
+                <span class="vector vector-up"></span>
+                <span class="vector vector-down"></span>
+            </nav>
+            <div class="menu-item">
+                <a href="#" class="menu">
+                    <span> Menu</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.166 9.76667V11.6667C14.166 14.8883 11.5543 17.5 8.33268 17.5C5.11102 17.5 2.49935 14.8883 2.49935 11.6667V9.76667C2.49935 9.4353 2.76798 9.16667 3.09935 9.16667H13.566C13.8974 9.16667 14.166 9.4353 14.166 9.76667Z"
+                            stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.99935 7.49996C9.99935 6.66663 10.5946 5.83329 11.7851 5.83329V5.83329C13.1 5.83329 14.166 4.7673 14.166 3.45234V2.91663"
+                            stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M6.66732 7.5V7.08333C6.66732 5.70262 7.78661 4.58333 9.16732 4.58333V4.58333C10.0878 4.58333 10.834 3.83714 10.834 2.91667V2.5"
+                            stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M13.334 9.16663H15.4173C16.5679 9.16663 17.5007 10.0994 17.5007 11.25C17.5007 12.4006 16.5679 13.3333 15.4173 13.3333H14.1673"
+                            stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </a>
+            </div>
+
+        </header>
+        <h1 class="menu-title">Behind each of our cups
+            hides an <span class="col">amazing surprise</span> </h1>
+        <div class="menu-tabs">
+
+            <label class="tabs-item" for="coffee" data-tabs="1">
+                <input class="tab" type="radio" id="coffee" name="tab" checked>
+                <span class="tabs-image">
+                    <img src="img/menu-cap.svg" alt="">
+                </span>
+                Coffee
+            </label>
+
+            <label class="tabs-item" for="tea" data-tabs="2">
+                <input class="tab" type="radio" id="tea" name="tab">
+                <span class="tabs-image">
+                    <img src="img/pot.svg" alt="">
+
+                </span>
+                Tea
+            </label>
+
+            <label class="tabs-item" for="desert" data-tabs="3">
+                <input class="tab" type="radio" id="desert" name="tab">
+                <span class="tabs-image">
+                    <img src="img/cake.svg" alt="">
+
+                </span>
+                Dessert
+            </label>
+        </div>
+
+
+        <div class="modal modal__unactive" id="modal">
+            <div class="modal-wrapper">
+               <div class="modal-img__wrap">
+                <img src="img/coffee-1.png" alt="product">
+            </div>
+                <div class="modal-info">
+                    <h3 class="modal-name">Irish coffee</h3>
+                    <p class="modal-descr">
+                        Fragrant black coffee with Jameson Irish whiskey and whipped milk
+                    </p>
+                    <div class="modal-size">
+                       Size
+                        <div class="modal-tabs">
+                            <label class="modal__label modal-size modal-tab__item" for="modal-s">
+                                <input class="modal__input" id="modal-s" type="radio" name="size" data-size="s" checked>
+                                <span class="modal__newinput">S</span>
+                                <span class="modal__info-size size-s">200 ml</span>
+                            </label>
+
+                            <label class="modal__label modal-size modal-tab__item" for="modal-m">
+                                <input class="modal__input" id="modal-m" type="radio" name="size" data-size="m">
+                                <span class="modal__newinput">M</span>
+                                <span class="modal-size__info size-m">300 ml</span>
+                            </label>
+
+                            <label class="modal__label modal-size modal-tab__item" for="modal-l">
+                                <input class="modal__input" id="modal-l" type="radio" name="size" data-size="l">
+                                <span class="modal__newinput ">L</span>
+                                <span class="modal__info-size size-l">400 ml</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="modal__additives">
+                        Additives
+                        <div class="modal-tabs">
+                            <label class="modal__label modal-additives modal-tab__item" for="sugar">
+                                <input class="modal__input" type="checkbox" id="sugar" name="additives"
+                                    data-additives="0">
+                                <span class="modal__newinput">1</span>
+                                <span class="modal__addivitives-drink adds-first">Sugar</span>
+                            </label>
+
+                            <label class="modal__label modal-additives modal-tab__item" for="cinnamon">
+                                <input class="modal__input" type="checkbox" id="cinnamon" name="additives"
+                                    data-additives="1">
+                                <span class="modal__newinput">2</span>
+                                <span class="modal__addivitives-drink adds-second">Cinnamon</span>
+                            </label>
+
+                            <label class="modal__label modal-additives modal-tab__item" for="syrup">
+                                <input class="modal__input" type="checkbox" id="syrup" name="additives"
+                                    data-additives="2">
+                                <span class="modal__newinput">3</span>
+                                <span class="modal__addivitives-drink adds-third">Syrup</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-total">
+                       <div class="modal-name__total">
+                        Total:<span class="cena">&#36;7.00</span>
+                       </div>
+                        <div class="notice">
+                            <svg class="warning__img" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none">
+                                <g clip-path="url(#clip0_268_12877)">
+                                    <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z"
+                                        stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_268_12877">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="notice-text">
+                                The cost is not final. Download our mobile app to see the final price and place
+                                your order. Earn loyalty points and enjoy your favorite coffee with up to 20%
+                                discount.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="modal-b btn" type="button">Close</button>
+                </div>
+            </div>
+      
+
+
+</div>
+
+        <div class="cards-container">
+            <div class="cards-wrap">
+                <div id="menu-1" class="menu-cards menu-cards__active">
+
+                    <div class="cards-item " data-card_number="0">
+                        <div class="img-block">
+                            <img src="img/coffee-1.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Irish coffee</h3>
+                            <p class="card-text">Fragrant black coffee with <br>
+                                Jameson Irish whiskey and <br>
+                                whipped milk</p>
+                            <h3>$7.00</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cards-item" data-card_number="1">
+                        <div class="img-block">
+                            <img src="img/coffee-2.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Kahlua coffee</h3>
+                            <p class="card-text">Classic coffee with milk and Kahlua
+                                liqueur under a cap of frothed milk</p>
+                            <h3>$7.00</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item " data-card_number="2">
+                        <div class="img-block">
+                            <img src="img/coffee-3.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Honey raf</h3>
+                            <p class="card-text">Espresso with frothed milk, cream
+                                and aromatic honey</p>
+                            <h3>$5.50</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item " data-card_number="3">
+                        <div class="img-block">
+                            <img src="img/coffee-4.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Ice cappuccino</h3>
+                            <p class="card-text">Cappuccino with soft thick foam
+                                in summer version with ice</p>
+                            <h3>$5.00</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item  last" data-card_number="4">
+                        <div class="img-block">
+                            <img src="img/coffee-5.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Espresso</h3>
+                            <p class="card-text">Classic black coffee</p>
+                            <h3>$4.50</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item last" data-card_number="5">
+                        <div class="img-block">
+                            <img src="img/coffee-6.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Latte</h3>
+                            <p class="card-text">Espresso coffee with the addition
+                                of steamed milk and dense milk
+                                foam</p>
+                            <h3>$5.50</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item last" data-card_number="6">
+                        <div class="img-block">
+                            <img src="img/coffee-7.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Latte macchiato</h3>
+                            <p class="card-text">Espresso with frothed milk and
+                                chocolate</p>
+                            <h3>$5.50</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item last" data-card_number="7">
+                        <div class="img-block">
+                            <img src="img/coffee-8.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Coffee with cognac</h3>
+                            <p class="card-text">Fragrant black coffee with cognac
+                                and whipped cream</p>
+                            <h3>$6.50</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="first">
+                        <img class="refresh" src="img/refresh.svg" alt="">
+                    </div>
+
+                </div>
+                <div id="menu-2" class="menu-cards">
+
+                    <div class="cards-item" data-card_number="8" ">
+                        <div class="img-block">
+                            <img src="img/tea-1.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Moroocan</h3>
+                            <p class="card-text">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+                            <h3>$4.50</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cards-item " data-card_number="9"">
+                        <div class="img-block">
+                            <img src="img/tea-2.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Ginger</h3>
+                            <p class="card-text">Original black tea with fresh ginger, lemon and honey</p>
+                            <h3>$5.00</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item " data-card_number="10">
+                        <div class="img-block">
+                            <img src="img/tea-3.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Cranberry</h3>
+                            <p class="card-text">Invigorating black tea with cranberry and honey</p>
+                            <h3>$5.00</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item " data-card_number="11">
+                        <div class="img-block">
+                            <img src="img/tea-4.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Sea buckthorn</h3>
+                            <p class="card-text">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</p>
+                            <h3>$5.50</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div id="menu-3" class="menu-cards">
+
+                    <div class="cards-item " data-card_number="12">
+                        <div class="img-block">
+                            <img src="img/dessert-1.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Marble cheesecake</h3>
+                            <p class="card-text">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</p>
+                            <h3>$3.50</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cards-item " data-card_number="13">
+                        <div class="img-block">
+                            <img src="img/dessert-2.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Red velvet</h3>
+                            <p class="card-text">Layer cake with cream cheese frosting</p>
+                            <h3>$4.00</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item" data-card_number="14">
+                        <div class="img-block">
+                            <img src="img/dessert-3.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Cheesecakes</h3>
+                            <p class="card-text">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</p>
+                            <h3>$4.50</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item" data-card_number="15">
+                        <div class="img-block">
+                            <img src="img/dessert-4.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Creme brulee</h3>
+                            <p class="card-text">Delicate creamy dessert in a caramel basket with wild berries</p>
+                            <h3>$4.00</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item last" data-card_number="16">
+                        <div class="img-block">
+                            <img src="img/dessert-5.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Pancakes</h3>
+                            <p class="card-text">Tender pancakes with strawberry jam and fresh strawberries</p>
+                            <h3>$4.50</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item last" data-card_number="17">
+                        <div class="img-block">
+                            <img src="img/dessert-6.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Honey cake</h3>
+                            <p class="card-text">Сlassic honey cake with delicate custard</p>
+                            <h3>$4.50</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item last" data-card_number="18">
+                        <div class="img-block">
+                            <img src="img/dessert-7.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Chocolate cake</h3>
+                            <p class="card-text">Cake with hot chocolate filling and nuts with dried apricotsы</p>
+                            <h3>$5.50</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="cards-item last" data-card_number="19">
+                        <div class="img-block">
+                            <img src="img/dessert-8.png" alt="">
+                        </div>
+                        <div class="menu-descr">
+                            <h3>Black forest</h3>
+                            <p class="card-text">A combination of thin sponge cake with cherry jam and light chocolate mousse</p>
+                            <h3>$6.50</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="two">
+                        <img class="refresh" src="img/refresh.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contacts" class="contacts contacts-menu">
+            <div class="left-footer">
+                <h2 class="footer-title">Sip, Savor, Smile.
+                    <span class="col">It’s coffee time!</span>
+                </h2>
+                <div class="socials">
+                    <div class="twitter footer-circle">
+                        <svg class="footer-ic" width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 
+                    3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 
+                    5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 
+                    4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 
+                    21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" />
+                        </svg>
+                    </div>
+
+                    <div class="insta footer-circle">
+                        <svg class="footer-ic" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 
+                                9.79086 16 12 16Z" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 
+                                21H8C5.23858 21 3 18.7614 3 16Z" />
+                            <path d="M17.5 6.51L17.51 6.49889" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    <div class="facebook footer-circle">
+                        <svg class="footer-ic" width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="facebook">
+                                <path id="Vector" d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 
+                    7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 
+                    6H17V2Z" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </svg>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="right-footer">
+                <h3 class="footer-text">Contact us</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a class="link-footer" href="https://www.google.com/maps/search/8558+Green+Road+Los+Angeles"
+                            target="_blank">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6663 8.33329C14.6663 12.0152 7.99967 18.3333 7.99967 18.3333C7.99967 18.3333 1.33301 12.0152 1.33301 8.33329C1.33301 4.65139 4.31778 1.66663 7.99967 1.66663C11.6816 1.66663 14.6663 4.65139 14.6663 8.33329Z"
+                                    stroke="#E1D4C9" stroke-width="1.5"></path>
+                                <path
+                                    d="M8.00033 9.16667C8.46056 9.16667 8.83366 8.79357 8.83366 8.33333C8.83366 7.8731 8.46056 7.5 8.00033 7.5C7.54009 7.5 7.16699 7.8731 7.16699 8.33333C7.16699 8.79357 7.54009 9.16667 8.00033 9.16667Z"
+                                    fill="#E1D4C9" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="footer-span">&nbsp;8558 Green Rd.,&nbsp;&nbsp;LA</span>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="link-footer" href="tel:+16035550123">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.0984 12.2516L10.6665 12.9166C8.34845 11.7531 6.91654 10.4166 6.08321 8.33329L6.72483 4.89154L5.51197 1.66663L2.72946 1.66663C1.60191 1.66663 0.714659 2.59958 0.901079 3.71161C1.29888 6.08454 2.37231 10.0391 5.24987 12.9166C8.27338 15.9401 12.5661 17.3318 15.1378 17.9288C16.299 18.1983 17.3332 17.2908 17.3332 16.0988L17.3332 13.4843L14.0984 12.2516Z"
+                                    stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            +1 (603) 555-0123
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 5L10 10L15 10" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M10.0003 18.3333C14.6027 18.3333 18.3337 14.6023 18.3337 9.99996C18.3337 5.39759 14.6027 1.66663 10.0003 1.66663C5.39795 1.66663 1.66699 5.39759 1.66699 9.99996C1.66699 14.6023 5.39795 18.3333 10.0003 18.3333Z"
+                                stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                        <span class="footer-span__last">
+                            Mon-Sat: 9:00 AM – 23:00 PM
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="burger.js"></script>
+    <script src="tabs.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="modals.js" "></script>
+</body>
+
+</html>
